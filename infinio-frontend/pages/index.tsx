@@ -136,7 +136,7 @@ export default function Home() {
             FAQ
           </Link>
         </div>
-        <p className="mt-2 text-sm">&copy; {getCurrentYear()} C0mrad. All rights reserved.</p>
+        <p className="mt-2 text-sm">&copy; {getCurrentYear()} Infinio. All rights reserved.</p>
       </footer>
     </div>
   );
