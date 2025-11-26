@@ -1,5 +1,5 @@
 # Infinio - No-Code DeFi Automation App
 
-Welcome to **Infinio**, a revolutionary no-code, drag-and-drop decentralized application (DApp) built on 0G’s modular Layer 1 blockchain. C0mrad empowers users to create sophisticated crypto trading and DeFi automation workflows effortlessly, leveraging decentralized AI and real-time analytics. This README provides an overview, setup instructions, and roadmap for this innovative project.
+A revolutionary no-code, drag-and-drop platform built entirely on Polygon (PoS + zkEVM) that lets anyone create, deploy, and monetize AI-powered DeFi strategies in minutes.  Leveraging Polygon’s sub-second finality, near-zero fees, and AggLayer cross-chain superpowers, Infinio brings real-time yield optimization, arbitrage bots, dynamic liquidity, and predictive trading to millions of retail users — no code required.  Live on Polygon mainnet, already generating revenue through the built-in royalty-earning marketplace.  This README gives you everything you need to run, explore, and contribute to the future of accessible DeFi.  Infinio – Infinite strategies. Zero code. Powered by Polygon.
 
 
