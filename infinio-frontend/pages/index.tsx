@@ -10,7 +10,7 @@ export default function Home() {
       {/* Navigation */}
       <nav className="bg-white shadow-md py-4">
         <div className="container mx-auto px-4 flex justify-between items-center">
-          <div className="text-2xl font-semibold text-blue-700">C0mrad</div>
+          <div className="text-2xl font-semibold text-blue-700">Infinio</div>
           <div className="space-x-6">
             <Link href="/features" className="text-blue-600 hover:text-gold-500 transition duration-300">
               Features
