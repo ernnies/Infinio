@@ -215,7 +215,7 @@ export default function Create() {
     });
     tour.addStep({
       id: "intro",
-      text: "Welcome to C0mrad! Drag actions from the left to build your workflow.",
+      text: "Welcome to Infinio! Drag actions from the left to build your workflow.",
       attachTo: { element: ".actions-panel", on: "bottom" },
       buttons: [{ text: "Next", action: tour.next }],
     });
