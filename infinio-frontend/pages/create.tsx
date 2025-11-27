@@ -286,14 +286,14 @@ export default function Create() {
       className={`min-h-screen text-gray-800 font-sans ${theme === "dark" ? "bg-gray-900 text-gray-200" : "bg-gradient-to-br from-gray-50 via-white to-blue-50"} touch-pan-y`}
       onTouchMove={(e) => {
         if (e.touches.length === 2) {
-          const canvas = document.querySelector(".canvas-panel");
+          const canvas = document.querySelector(".canvas-panel") as HTMLElement | null;
           if (canvas) canvas.style.transform = "scale(1.2)";
         } else if (e.touches.length === 1 && e.touches[0].clientX < 50) {
           setWorkflow(workflow.slice(1));
         }
       }}
       onTouchEnd={() => {
-        const canvas = document.querySelector(".canvas-panel");
+        const canvas = document.querySelector(".canvas-panel") as HTMLElement | null;
         if (canvas) canvas.style.transform = "scale(1)";
       }}
     >

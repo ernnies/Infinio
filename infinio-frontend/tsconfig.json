@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
-    "baseUrl": ".",  
-    "target": "es5",
+    "baseUrl": ".",
+    "target": "es2022",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
@@ -10,25 +10,26 @@
     "forceConsistentCasingInFileNames": true,
     "esModuleInterop": true,
     "module": "esnext",
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
-    "plugins": [
-      {
-        "name": "next"
-      }
-    ],
-    "paths": {
-      "@/*": ["./*"], //maps @/ to the project root
-      "@components/*": ["./components"],
-      "@types/*": ["./types"]
-    },
-
     "allowSyntheticDefaultImports": true,
     "experimentalDecorators": true,
-    "emitDecoratorMetadata": true
+    "emitDecoratorMetadata": true,
+
+    "plugins": [{ "name": "next" }],
+
+    "paths": {
+      "@/*": ["./*"],
+      "@components/*": ["./components"],
+      "@types/*": ["./types"],
+
+      // THIS IS THE CORRECT, WORKING MAPPING
+      "ethers": ["node_modules/ethers"],
+      "ethers/*": ["node_modules/ethers/*"]
+    }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
   "exclude": ["node_modules", ".next", "out"]
