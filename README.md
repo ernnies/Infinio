@@ -4,6 +4,10 @@
 
 Live on **Polygon PoS**, **Polygon zkEVM**, and integrated with **AggLayer** for cross-chain execution.
 
+## The deployment of key contracts—C0mradToken at 0x03A1a836FAEc7Dc83D39AaC91283fe42230b1835 (current version) and 0xd7d814043bf089B3AbdB00448a2Cd2fAf98697CA (earlier version), then C0mradCore Proxy at 0x55a4aD8A46F2B204e74F5D5861a6eAD8ccf89b08.
+
+## The root hash of the uploaded file based on the workflow data "Test Workflow" with steps ["Buy Token", "Sell Token"] 0x9f0c5d0bb80a68e872c8bd000a8803efbdd5a3ba991e29fb0e4a963f2d37c00f. Simulating 0G Storage's verification process.
+
 Strategy contracts and marketplace are fully deployed on Polygon mainnet.
 
 * **Repository:** [https://github.com/infinio-hq/infinio](https://github.com/infinio-hq/infinio)
