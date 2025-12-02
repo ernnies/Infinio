@@ -1,4 +1,3 @@
-// lib/0g-storage.ts
 import { Indexer, ZgFile } from '@0glabs/0g-ts-sdk';
 import { ethers } from 'ethers';
 import { Workflow } from './types';
