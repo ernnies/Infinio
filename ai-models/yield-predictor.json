@@ -6,7 +6,7 @@
       {
         "class_name": "InputLayer",
         "config": {
-          "batch_input_shape": [null, 5],  // Inputs: e.g., APY history, volatility, etc.
+          "batch_input_shape": [null, 5],  
           "dtype": "float32",
           "sparse": false,
           "ragged": false,
@@ -14,7 +14,7 @@
         }
       },
       {
-        "class_name": "Dense",  // Layer 1: Hidden dense layer
+        "class_name": "Dense",  
         "config": {
           "name": "dense_1",
           "trainable": true,
@@ -27,7 +27,7 @@
         }
       },
       {
-        "class_name": "Dense",  // Layer 2: Output for prediction
+        "class_name": "Dense",  
         "config": {
           "name": "dense_2",
           "trainable": true,
