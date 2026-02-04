@@ -1,0 +1,6 @@
+{
+  "models": [
+    { "name": "yield_predictor", "file": "yield-predictor.json" },
+    { "name": "arbitrage_detector", "file": "arbitrage-detector.json" }
+  ]
+}
