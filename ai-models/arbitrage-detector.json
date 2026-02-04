@@ -1,0 +1,25 @@
+{
+  "class_name": "DecisionTree",
+  "config": {
+    "name": "arbitrage_detector",
+    "nodes": [
+      {
+        "id": 0,
+        "feature": "price_diff",  
+        "threshold": 0.05,
+        "left_child": 1,
+        "right_child": 2
+      },
+      {
+        "id": 1,
+        "value": "no_arbitrage"  
+      },
+      {
+        "id": 2,
+        "value": "execute_trade"
+      }
+    ],
+    "max_depth": 3,
+    "integration_notes": "Params can be stored on-chain for simple eval."
+  }
+}
