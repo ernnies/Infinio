@@ -2,6 +2,7 @@ import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
 import storageRoutes from "./routes/storageRoutes";
+import nlCompileRoutes from './routes/nlCompileRoutes';
 
 dotenv.config();
 
@@ -11,6 +12,7 @@ const PORT = process.env.PORT || 3001;
 app.use(cors({ origin: "http://localhost:3000" })); // Allow frontend
 app.use(express.json({ limit: "10mb" }));
 app.use("/api", storageRoutes);
+app.use('/api', nlCompileRoutes); 
 
 // Health check endpoint
 app.get("/", (req, res) => {
