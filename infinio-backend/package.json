@@ -13,6 +13,7 @@
   "description": "",
   "dependencies": {
     "@0glabs/0g-ts-sdk": "^0.3.3",
+    "@tensorflow/tfjs": "^4.22.0",
     "@tensorflow/tfjs-node": "^4.22.0",
     "@types/jsonwebtoken": "^9.0.10",
     "cors": "^2.8.5",
