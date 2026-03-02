@@ -1,6 +1,26 @@
 {
+  "version": "1.0.0",
   "models": [
-    { "name": "yield_predictor", "file": "yield-predictor.json" },
-    { "name": "arbitrage_detector", "file": "arbitrage-detector.json" }
+    {
+      "name": "yield_predictor",
+      "description": "Predicts next period APY / yield based on historical features (APY, volatility, TVL, etc.)",
+      "file": "yield-predictor.json",
+      "type": "neural_network",
+      "input_shape": [null, 5],
+      "output_shape": [null, 1],
+      "weights_file": "yield-predictor-weights.h5",  
+      "status": "prototype",
+      "last_updated": "2026-03-02"
+    },
+    {
+      "name": "arbitrage_detector",
+      "description": "Simple threshold-based detector for cross-DEX / cross-chain price differences",
+      "file": "arbitrage-detector.json",
+      "type": "decision_tree",
+      "input_features": ["price_diff", "gas_cost", "slippage_estimate"],
+      "output": "execute | hold",
+      "status": "prototype",
+      "last_updated": "2026-03-02"
+    }
   ]
 }

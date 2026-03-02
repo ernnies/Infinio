@@ -1,25 +1,20 @@
 {
-  "class_name": "DecisionTree",
-  "config": {
-    "name": "arbitrage_detector",
-    "nodes": [
-      {
-        "id": 0,
-        "feature": "price_diff",  
-        "threshold": 0.05,
-        "left_child": 1,
-        "right_child": 2
-      },
-      {
-        "id": 1,
-        "value": "no_arbitrage"  
-      },
-      {
-        "id": 2,
-        "value": "execute_trade"
-      }
-    ],
-    "max_depth": 3,
-    "integration_notes": "Params can be stored on-chain for simple eval."
-  }
+  "name": "arbitrage_detector_v1",
+  "type": "decision_tree",
+  "description": "Triggers if price difference exceeds threshold after gas/slippage",
+  "root": {
+    "feature": "price_diff_percent",
+    "threshold": 0.8,
+    "left": {
+      "value": "hold"
+    },
+    "right": {
+      "feature": "estimated_profit_after_gas",
+      "threshold": 0.3,
+      "left": { "value": "hold" },
+      "right": { "value": "execute_arbitrage" }
+    }
+  },
+  "features_order": ["price_diff_percent", "estimated_profit_after_gas", "slippage_bps", "network_congestion"],
+  "on_chain_friendly": true
 }

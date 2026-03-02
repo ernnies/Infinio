@@ -1,0 +1,15 @@
+{
+  "models": {
+    "yield_predictor": {
+      "training_data_source": "Polygon subgraph (The Graph) + Coingecko historical",
+      "features": ["last_5_apy", "vol_30d", "tvl_change", "pool_incentives", "risk_score"],
+      "target": "next_24h_apy_estimate",
+      "metrics": { "mse": 0.00045, "mae": 0.018 }
+    },
+    "arbitrage_detector": {
+      "training_data_source": "DEX aggregator feeds (1inch, Paraswap, etc.)",
+      "accuracy": 0.92,
+      "false_positive_rate": 0.03
+    }
+  }
+}
