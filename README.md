@@ -17,6 +17,8 @@ Strategy contracts and marketplace are fully deployed on Polygon mainnet.
 * **License:** MIT
 
 ---
+A Natural Language down to Strategy Builder adds a frontend NaturalLanguagePanel component into workflow steps via keyword-based client-side parsing and an optional backend /api/compile-nl endpoint with rule-based mapping (future Chainlink Functions support), controlled by feature flag. Polygon CDK premium chain support introduces a premium-cdk/ with gas-optimized contracts (PremiumStrategy.sol) featuring flash-loans and AggLayer intents, deploy-premium backend route using dedicated CDK RPC, frontend toggle, and new env variables. Autonomous AI agents (ElizaOS + Gelato) propose agents/ contracts (AgentCore, perpetual rebalancers) and backend Gelato perpetual task registration with frontend "Agent Mode" toggle.ai-models/ folder gains standardized registry, inference config, metadata, and loading utilities for yield prediction and arbitrage detection.
+
 
 ## **🌟 What Infinio Does**
 
